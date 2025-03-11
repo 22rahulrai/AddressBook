@@ -17,7 +17,6 @@ namespace Adressbook
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
-        // Constructor
         public Contact(string firstName, string lastName, string address, string city, string state, string zip, string phoneNumber, string email)
         {
             FirstName = firstName;
@@ -34,6 +33,5 @@ namespace Adressbook
         {
             return $"Name: {FirstName} {LastName}, Address: {Address}, {City}, {State} {Zip}, Phone: {PhoneNumber}, Email: {Email}";
         }
-
     }
 }
