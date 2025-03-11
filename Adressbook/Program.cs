@@ -2,23 +2,39 @@
 {
     internal class Program
     {
-        static List<Contact> listcontacts = new List<Contact>;
+        static List<Contact> listcontacts = new List<Contact>();
         static void Main(string[] args)
         {
 
-            Contact newcontact = new Contact("rahul", "rai", "123  ", "Panchkula", "HR", "62701", "217 - 555 - 1234", "john@gmai.com");
-            listcontacts.Add(newcontact);
-            Console.WriteLine("new contact added");
+            Console.Write("Enter First Name: ");
+            string FirstName = Console.ReadLine();
+
+            Console.Write("Enter Last Name: ");
+            string LastName = Console.ReadLine();
+
+            Console.Write("Enter Address: ");
+            string Address = Console.ReadLine();
+
+            Console.Write("Enter City: ");
+            string City = Console.ReadLine();
+
+            Console.Write("Enter State: ");
+            string State = Console.ReadLine();
+
+            Console.Write("Enter Zip Code: ");
+            string Zip = Console.ReadLine();
+
+            Console.Write("Enter Phone Number: ");
+            string PhoneNumber = Console.ReadLine();
+
+            Console.Write("Enter Email: ");
+            string Email = Console.ReadLine();
+
+            Contact newContact = new Contact(FirstName, LastName, Address, City, State, Zip, PhoneNumber, Email);
+            Console.WriteLine("Contact details");
+            Console.WriteLine(newContact);
+
         }
     }
 }
 
-//Ability to create a Contacts in Address
-//Book with first and last names, address,
-//city, state, zip, phone number and
-//email…
-//- Program is written using IDE like Visual Studio
-//- Every UC is in a separate Git Branch and then merged with main
-//- Naming Convention, Indentation, etc Code Hygiene will be checked during
-//Review
-//- Git Check In Comments and Version History will be monitored
