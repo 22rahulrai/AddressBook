@@ -66,7 +66,6 @@ namespace Adressbook
                 Console.WriteLine("contact not found");
                 return;
             }
-
         }
 
         public void DisplayContacts()
