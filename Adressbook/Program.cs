@@ -6,14 +6,14 @@
         {
             Addressbook myab = new Addressbook();
 
-            Contact c1 = new Contact("rahul", "rai", "123  ", "Panchkula", "HR", "62701", "10", "rahul@gmai.com");
-            Contact c2 = new Contact("john", "martin", "292  ", "Panchkula", "HR", "62701", "20", "john@gmai.com");
+            Contact c1 = new Contact("rahul", "rai", "123  ", "Panchkula", "HR", "62701", "10", "rahul@gmail.com");
+            Contact c2 = new Contact("john", "martin", "292  ", "Panchkula", "HR", "62701", "20", "john@gmail.com");
             myab.Addcontact(c1);
             myab.Addcontact(c2);
 
             while (true)
             {
-                Console.WriteLine("\n1. Add Contact\n2. Display Contacts\n3. Update Contacts\n4. Exit");
+                Console.WriteLine("\n1. Add Contact\n2. Display Contacts\n3. Update Contacts\n4. Delete contact \n5. Exit");
                 Console.Write("Choose an option: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -59,6 +59,13 @@
                 }
                 else if (choice == 4)
                 {
+                    Console.WriteLine("Enter contact name to delete contact");
+                    string deletename = Console.ReadLine();
+                    myab.Deletecontact(deletename);
+                }
+                else if (choice == 5)
+                {
+                    Console.WriteLine("Exiting...");
                     break;
                 }
                 else
