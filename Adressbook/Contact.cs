@@ -30,5 +30,10 @@ namespace Adressbook
             Email = email;
         }
 
+        public override string ToString()
+        {
+            return $"Name: {FirstName} {LastName}, Address: {Address}, {City}, {State} {Zip}, Phone: {PhoneNumber}, Email: {Email}";
+        }
+
     }
 }
